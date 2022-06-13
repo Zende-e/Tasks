@@ -18,22 +18,19 @@ namespace _132
             Console.Write("Cколько у вас золота: ");
             goldInBackPack = Convert.ToInt32(Console.ReadLine());
 
-            while (true)
-            {
-                Console.Write("Cколько кристалов купить: ");
-                crystalsToBuy = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Cколько кристалов купить: ");
+            crystalsToBuy = Convert.ToInt32(Console.ReadLine());
 
-                Random random = new Random();
-                crystalExchangeRate = random.Next(1, 100);
-                Console.WriteLine("Курс кристала  {0} ", crystalExchangeRate);
+            Random random = new Random();
+            crystalExchangeRate = random.Next(1, 100);
+            Console.WriteLine("Курс кристала  {0} ", crystalExchangeRate);
 
 
-                goldInBackPack -= crystalsToBuy * crystalExchangeRate;
-                crystalsInBackPack += crystalsToBuy;
+            goldInBackPack -= crystalsToBuy * crystalExchangeRate;
+            crystalsInBackPack += crystalsToBuy;
 
-                Console.WriteLine("Кристалов в рюкзаке  {0} ", crystalsInBackPack);
-                Console.WriteLine("Золота в Рюкзаке {0}", goldInBackPack);
-            }
+            Console.WriteLine("Кристалов в рюкзаке  {0} ", crystalsInBackPack);
+            Console.WriteLine("Золота в Рюкзаке {0}", goldInBackPack);
         }
     }
 }
