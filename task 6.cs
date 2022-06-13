@@ -12,10 +12,10 @@ namespace _132
         {
             int picturesCount=52;
             int picturesInRow = 3;
+            int fullRowsCount = picturesCount / picturesInRow;
+            int picturesLeft = picturesCount % picturesInRow;
 
-            Console.WriteLine("Полностью заполненных рядов: {0} Осталось картинок: {1}", picturesCount/picturesInRow, picturesCount % picturesInRow);
-
-
+            Console.WriteLine("Полностью заполненных рядов: {0} Осталось картинок: {1}", fullRowsCount , picturesLeft);
         }
     }
 }
