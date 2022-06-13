@@ -13,10 +13,11 @@ namespace _132
             Console.Write("Сколько человек в очереди: ");
             int queueLeight = Convert.ToInt32(Console.ReadLine());
             int timeForOnePerson = 10;
-            int hours = timeForOnePerson * queueLeight / 60;
-            int minutes = timeForOnePerson * queueLeight % 60;
+            int minutesInHour = 60;
+            int waitingHours = timeForOnePerson * queueLeight / minutesInHour;
+            int waitingMinutes = timeForOnePerson * queueLeight % minutesInHour;
 
-            Console.WriteLine("Вы должны стоять в очереди {0} часов {1} минут", hours, minutes);
+            Console.WriteLine("Вы должны стоять в очереди {0} часов {1} минут", waitingHours, waitingMinutes);
             Console.ReadKey();
         }
     }
