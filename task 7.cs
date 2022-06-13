@@ -25,7 +25,6 @@ namespace _132
             crystalExchangeRate = random.Next(1, 100);
             Console.WriteLine("Курс кристала  {0} ", crystalExchangeRate);
 
-
             goldInBackPack -= crystalsToBuy * crystalExchangeRate;
             crystalsInBackPack += crystalsToBuy;
 
