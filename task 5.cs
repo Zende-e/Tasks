@@ -21,12 +21,7 @@ namespace _132
 
             Console.WriteLine("Имя: " + userName + "\n" + "Фамилия: " + userSurname);
 
-
-
-
             Console.ReadKey();
-
-
         }
     }
 }
